@@ -3,7 +3,7 @@
 # Annoy: This should be a paper Title
 
 <p align="center">
-    📑 <a href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://specx.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/{hf_namespace}/specx-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/datasets/{hf_namespace}/Annoy-PyEdu-Reasoning" target="_blank">Dataset</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/{github_namespace}/Annoy-DataSync" target="_blank">Repo</a>  
+    📑 <a href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://specx.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 🤗 <a href="https://huggingface.co/collections/{hf_namespace}/specx-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/datasets/{hf_namespace}/Annoy-PyEdu-Rs" target="_blank">Dataset</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/{github_namespace}/Annoy-DataSync" target="_blank">Repo</a>  
 <br>
 
 <p align="center">
@@ -39,11 +39,11 @@ Annoy-DataSync is a novel approach that transforms code-based reasoning patterns
 
 |Dataset|Link|
 |-|-|
-|Annoy-PythonEdu-Reasoning|[🤗](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Reasoning)|
-|Annoy-PythonEdu-Raw|[🤗](https://huggingface.co/datasets/{hf_namespace}/Annoy-PyEdu-Reasoning-Raw)|
+|Annoy-PythonEdu-Rs|[🤗](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Rs)|
+|Annoy-PythonEdu-Rs-Raw|[🤗](https://huggingface.co/datasets/{hf_namespace}/Annoy-PyEdu-Rs-Raw)|
 |LCO Benchmark|[🤗](https://huggingface.co/datasets/{hf_namespace}/LCO)|
 
-Due to our collaborators' compliance requirements, we only release the PythonEdu-Reasoning subset of the Annoy(++) dataset.
+Due to our collaborators' compliance requirements, we only release the PythonEdu-Rs subset of the Annoy(++) dataset.
 
 
 
@@ -103,7 +103,7 @@ Please note that our setup does not guarantee the execution of all types of Pyth
 
 ### Data Processing
 
-We provide a complete guide for you to build data for Annoy on a toy dataset. After all these steps you can get a dataset with the same format as in our [huggingface dataset](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Reasoning).
+We provide a complete guide for you to build data for Annoy on a toy dataset. After all these steps you can get a dataset with the same format as in our [huggingface dataset](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Rs).
 
 All intermediate results will be stored under `./data`.
 
@@ -207,7 +207,7 @@ python ./src/assemble_spec_demo.py \
 --result_file_turn2 data/spec_1k_gens_rev_verified.jsonl \
 --output_file spec_demo_final.jsonl
 ```
-By doing so, you can get data `data/spec_demo_final.jsonl` with the same format as in our [huggingface dataset](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Reasoning).
+By doing so, you can get data `data/spec_demo_final.jsonl` with the same format as in our [huggingface dataset](https://huggingface.co/datasets/{hf_namespace}/Annoy-Pyedu-Rs).
 
 ### Training
 You can use any popular training framework to train your model like [llama-factory](https://github.com/hiyouga/LLaMA-Factory). 
